@@ -1,45 +1,88 @@
 import "./resources/styles/styles.scss";
 import { Character } from "./types";
-import heroImgRun1 from './resources/character-sprites/mc-run(1).png';
-import heroImgRun2 from './resources/character-sprites/mc-run(2).png';
-import heroImgRun3 from './resources/character-sprites/mc-run(3).png';
-import npcImgRun1 from './resources/character-sprites/npc-0.png';
-import npcImgRun2 from './resources/character-sprites/npc-2.png';
-import npcImgRun3 from './resources/character-sprites/npc-4.png';
-import npcImgRun4 from './resources/character-sprites/npc-6.png';
-import npcImgRun5 from './resources/character-sprites/npc-8.png';
-import npcImgRun6 from './resources/character-sprites/npc-10.png';
-import npcImgRun7 from './resources/character-sprites/npc-12.png';
-import npcImgWham from './resources/character-sprites/wham.png';
-import heroImgAttack1 from './resources/character-sprites/mc-attack00.png';
-import heroImgAttack2 from './resources/character-sprites/mc-attack02.png';
-import heroImgAttack3 from './resources/character-sprites/mc-attack03.png';
-import heroImgAttack4 from './resources/character-sprites/mc-attack04.png';
-import heroImgAttack5 from './resources/character-sprites/mc-attack05.png';
-import heroImgAttack6 from './resources/character-sprites/mc-attack06.png';
-import heroImgAttack7 from './resources/character-sprites/mc-attack07.png';
-import heroImgAttack8 from './resources/character-sprites/mc-attack17.png';
-import heroImgAttack9 from './resources/character-sprites/mc-attack18.png';
-import heroImgAttack10 from './resources/character-sprites/mc-attack19.png';
-import heroImgAttack11 from './resources/character-sprites/mc-attack20.png';
-import heroImgAttack12 from './resources/character-sprites/mc-attack21.png';
-import backgroundImg from './resources/character-sprites/office(2).png';
-import attackAudio from './resources/audio/hits/6.ogg';
-import collisionAudio from './resources/audio/hits/ohmy.wav';
+// import heroImgRun1 from './resources/character-sprites/mc-run(1).png';
+// import heroImgRun2 from './resources/character-sprites/mc-run(2).png';
+// import heroImgRun3 from './resources/character-sprites/mc-run(3).png';
+// import npcImgRun1 from './resources/character-sprites/npc-0.png';
+// import npcImgRun2 from './resources/character-sprites/npc-2.png';
+// import npcImgRun3 from './resources/character-sprites/npc-4.png';
+// import npcImgRun4 from './resources/character-sprites/npc-6.png';
+// import npcImgRun5 from './resources/character-sprites/npc-8.png';
+// import npcImgRun6 from './resources/character-sprites/npc-10.png';
+// import npcImgRun7 from './resources/character-sprites/npc-12.png';
+// import npcImgWham from './resources/character-sprites/wham.png';
+// import heroImgAttack1 from './resources/character-sprites/mc-attack00.png';
+// import heroImgAttack2 from './resources/character-sprites/mc-attack02.png';
+// import heroImgAttack3 from './resources/character-sprites/mc-attack03.png';
+// import heroImgAttack4 from './resources/character-sprites/mc-attack04.png';
+// import heroImgAttack5 from './resources/character-sprites/mc-attack05.png';
+// import heroImgAttack6 from './resources/character-sprites/mc-attack06.png';
+// import heroImgAttack7 from './resources/character-sprites/mc-attack07.png';
+// import heroImgAttack8 from './resources/character-sprites/mc-attack17.png';
+// import heroImgAttack9 from './resources/character-sprites/mc-attack18.png';
+// import heroImgAttack10 from './resources/character-sprites/mc-attack19.png';
+// import heroImgAttack11 from './resources/character-sprites/mc-attack20.png';
+// import heroImgAttack12 from './resources/character-sprites/mc-attack21.png';
+// import backgroundImg from './resources/character-sprites/office(2).png';
+// import attackAudio from './resources/audio/hits/6.ogg';
+// import collisionAudio from './resources/audio/hits/ohmy.wav';
+
+const heroImgRun1 = new URL("/resources/character-sprites/mc-run(1).png");
+const heroImgRun2 = new URL("/resources/character-sprites/mc-run(2).png");
+const heroImgRun3 = new URL("/resources/character-sprites/mc-run(3).png");
+const npcImgRun1 = new URL("/resources/character-sprites/npc-0.png");
+const npcImgRun2 = new URL("/resources/character-sprites/npc-2.png");
+const npcImgRun3 = new URL("/resources/character-sprites/npc-4.png");
+const npcImgRun4 = new URL("/resources/character-sprites/npc-6.png");
+const npcImgRun5 = new URL("/resources/character-sprites/npc-8.png");
+const npcImgRun6 = new URL("/resources/character-sprites/npc-10.png");
+const npcImgRun7 = new URL("/resources/character-sprites/npc-12.png");
+const npcImgWham = new URL("/resources/character-sprites/wham.png");
+const heroImgAttack1 = new URL("/resources/character-sprites/mc-attack00.png");
+const heroImgAttack2 = new URL("/resources/character-sprites/mc-attack02.png");
+const heroImgAttack3 = new URL("/resources/character-sprites/mc-attack03.png");
+const heroImgAttack4 = new URL("/resources/character-sprites/mc-attack04.png");
+const heroImgAttack5 = new URL("/resources/character-sprites/mc-attack05.png");
+const heroImgAttack6 = new URL("/resources/character-sprites/mc-attack06.png");
+const heroImgAttack7 = new URL("/resources/character-sprites/mc-attack07.png");
+const heroImgAttack8 = new URL("/resources/character-sprites/mc-attack17.png");
+const heroImgAttack9 = new URL("/resources/character-sprites/mc-attack18.png");
+const heroImgAttack10 = new URL("/resources/character-sprites/mc-attack19.png");
+const heroImgAttack11 = new URL("/resources/character-sprites/mc-attack20.png");
+const heroImgAttack12 = new URL("/resources/character-sprites/mc-attack21.png");
+const backgroundImg = new URL("/resources/character-sprites/office(2).png");
+// const attackAudio = new URL("/resources/audio/hits/6.ogg");
+// const collisionAudio = new URL("/resources/audio/hits/ohmy.wav");
 
 /////////////////////////// QUERY SELECTOR /////////////////////////////////
 const heroCharacter = document.querySelector<HTMLDivElement>("#hero");
 const npcCharacter12 = document.querySelector<HTMLDivElement>(".npc-12");
-const npcCollision = document.querySelector<HTMLDivElement>(".npc__collision-box");
-const heroCollisionBox = document.querySelector<HTMLDivElement>(".hero__collision-box");
+const npcCollision = document.querySelector<HTMLDivElement>(
+  ".npc__collision-box"
+);
+const heroCollisionBox = document.querySelector<HTMLDivElement>(
+  ".hero__collision-box"
+);
 const scoreBox = document.querySelector<HTMLDivElement>(".score-counter");
-const startScreen = document.querySelector<HTMLDivElement>(".game__start-screen");
-const gameOverScreen = document.querySelector<HTMLDivElement>(".game__end-screen");
-const gameOverScreenButton = document.querySelector<HTMLDivElement>(".game__end-screen-button");
-const startButton = document.querySelector<HTMLDivElement>(".game__start-button");
-const instructionsButton = document.querySelector<HTMLDivElement>(".game__instructions-button");
-const instructionsScreen = document.querySelector<HTMLDivElement>(".game__instructions");
-const gameBackground = document.querySelector<HTMLDivElement>(".game__background");
+const startScreen = document.querySelector<HTMLDivElement>(
+  ".game__start-screen"
+);
+const gameOverScreen =
+  document.querySelector<HTMLDivElement>(".game__end-screen");
+const gameOverScreenButton = document.querySelector<HTMLDivElement>(
+  ".game__end-screen-button"
+);
+const startButton = document.querySelector<HTMLDivElement>(
+  ".game__start-button"
+);
+const instructionsButton = document.querySelector<HTMLDivElement>(
+  ".game__instructions-button"
+);
+const instructionsScreen = document.querySelector<HTMLDivElement>(
+  ".game__instructions"
+);
+const gameBackground =
+  document.querySelector<HTMLDivElement>(".game__background");
 const lifeOne = document.querySelector<HTMLDivElement>(".one");
 const lifeTwo = document.querySelector<HTMLDivElement>(".two");
 const lifeThree = document.querySelector<HTMLDivElement>(".three");
@@ -69,8 +112,8 @@ if (
 
 const heroFrameRate = 10;
 const npcFrameRate = 8;
-const attackSound = new Audio(attackAudio);
-const collisionSound = new Audio(collisionAudio);
+// const attackSound = new Audio(attackAudio);
+// const collisionSound = new Audio(collisionAudio);
 let attackLoopCount = 0;
 let shouldClearTimeout = true;
 let scoreCounterTimeout: number;
@@ -103,11 +146,7 @@ const npcCharacterSprites = [
   npcImgWham,
 ];
 
-const heroImagesRun = [
-  heroImgRun1,
-  heroImgRun2,
-  heroImgRun3,
-];
+const heroImagesRun = [heroImgRun1, heroImgRun2, heroImgRun3];
 
 const heroImagesAttack = [
   heroImgAttack1,
@@ -140,9 +179,9 @@ const npc12: Character = {
 };
 
 /////////////////////////// HERO ATTACK FUNCTIONS //////////////////////////////////
-const playAttackSound = () => {
-  attackSound.play();
-};
+// const playAttackSound = () => {
+//   attackSound.play();
+// };
 
 const heroAttack = () => {
   if (isAttacking) {
@@ -167,7 +206,7 @@ const heroAttack = () => {
           heroRect.y < npcRect.y + npcRect.height &&
           heroRect.y + heroRect.height + 120 > npcRect.y
         ) {
-          playAttackSound();
+          // playAttackSound();
           score += 100;
           npcCharacter12.style.width = "40px";
           npcCharacter12.style.height = "40px";
@@ -289,7 +328,6 @@ const startGame = () => {
     Math.random() * (npcCharacterSprites.length - 1)
   );
   npcCharacter12.style.backgroundImage = `url('${npcCharacterSprites[randomImageIndex]}')`;
-  
 
   scoreTotal();
   heroRun();
@@ -360,9 +398,9 @@ document.addEventListener("keydown", (event: KeyboardEvent) => {
 });
 
 /////////////////////////////// COLLISION CHECK ////////////////////////////////////
-const playCollisionSound = () => {
-  collisionSound.play();
-};
+// const playCollisionSound = () => {
+//   collisionSound.play();
+// };
 const checkCollision = () => {
   const heroRect = heroCollisionBox.getBoundingClientRect();
   const npcRect = npcCharacter12.getBoundingClientRect();
@@ -372,7 +410,7 @@ const checkCollision = () => {
     heroRect.y < npcRect.y + npcRect.height &&
     heroRect.y + heroRect.height > npcRect.y
   ) {
-    playCollisionSound();
+    // playCollisionSound();
     removeGameLife();
     score -= 100;
     gravity = 50;
